@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+
+        long minutes = 525600;  // change this value
+
+        long years = minutes / 525600;
+        long days = (minutes % 525600) / 1440;
+
+        System.out.println("Years: " + years);
+        System.out.println("Days: " + days);
+    }
+}
