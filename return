@@ -1,0 +1,21 @@
+public class Sample {
+
+    // Static method 1
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    // Static method 2
+    public static int divide(int a, int b) {
+        return a / b;
+    }
+
+    public static void main(String[] args) {
+
+        int sum = add(8, 2);       // no object needed
+        int div = divide(8, 2);    // no object needed
+
+        System.out.println("Sum = " + sum);
+        System.out.println("Division = " + div);
+    }
+}
