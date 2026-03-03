@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        if (sc.hasNextDouble()) {
+
+            double inches = sc.nextDouble();
+            double meters = inches * 0.0254;
+
+            System.out.printf("%.2f", meters);
+
+        } else {
+            System.out.println("Invalid output");
+        }
+
+        sc.close();
+    }
+}
