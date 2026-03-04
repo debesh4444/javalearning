@@ -1,0 +1,113 @@
+// Human Class
+class Human {
+    String name;
+    int age;
+
+    void speak() {
+        System.out.println("Human is speaking");
+    }
+}
+
+// MobilePhone Class
+class MobilePhone {
+    String brand;
+    double price;
+
+    void call() {
+        System.out.println("Calling from mobile phone");
+    }
+}
+
+// Desktop Class
+class Desktop {
+    String processor;
+    int ram;
+
+    void start() {
+        System.out.println("Desktop is starting");
+    }
+}
+
+// College Class
+class College {
+    String name;
+    String location;
+
+    void display() {
+        System.out.println("College Name: " + name);
+    }
+}
+
+// TestSuite Class
+class TestSuite {
+    String suiteName;
+
+    void runSuite() {
+        System.out.println("Running Test Suite");
+    }
+}
+
+// TestCase Class
+class TestCase {
+    String caseName;
+
+    void execute() {
+        System.out.println("Executing Test Case");
+    }
+}
+
+// TestStep Class
+class TestStep {
+    String stepDescription;
+
+    void perform() {
+        System.out.println("Performing Test Step");
+    }
+}
+
+// 5 More Classes
+
+class Car {
+    String model;
+    int year;
+
+    void drive() {
+        System.out.println("Car is driving");
+    }
+}
+
+class Book {
+    String title;
+    String author;
+
+    void read() {
+        System.out.println("Reading book");
+    }
+}
+
+class Student {
+    String name;
+    int rollNo;
+
+    void study() {
+        System.out.println("Student is studying");
+    }
+}
+
+class Teacher {
+    String name;
+    String subject;
+
+    void teach() {
+        System.out.println("Teacher is teaching");
+    }
+}
+
+class Laptop {
+    String brand;
+    int ram;
+
+    void shutdown() {
+        System.out.println("Laptop is shutting down");
+    }
+}
