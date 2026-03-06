@@ -1,0 +1,22 @@
+public class Demo {
+
+    // static void method
+    static void message() {
+        System.out.println("This is static method");
+    }
+
+    // non-static void method
+    void display() {
+        System.out.println("This is non-static method");
+    }
+
+    public static void main(String[] args) {
+
+        // calling static method with class name
+        Demo.message();
+
+        // calling non-static method
+        Demo obj = new Demo();
+        obj.display();
+    }
+}
