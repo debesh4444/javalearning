@@ -1,0 +1,25 @@
+class Student {
+    int marks;
+
+    Student addMarks(int m) {
+        marks = marks + m;
+        return this;
+    }
+
+    Student bonusMarks(int b) {
+        marks = marks + b;
+        return this;
+    }
+
+    void show() {
+        System.out.println("Total Marks: " + marks);
+    }
+}
+
+class Demo {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        s.addMarks(50).bonusMarks(10).show();
+    }
+}
