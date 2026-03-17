@@ -1,0 +1,11 @@
+public class FactorsExample {
+    public static void main(String[] args) {
+        int value = 24;
+
+        for (int i = 1; i <= value; i++) {
+            if (value % i == 0) {
+                System.out.print(i + " ");
+            }
+        }
+    }
+}
