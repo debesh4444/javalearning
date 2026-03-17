@@ -1,0 +1,64 @@
+// Human Class
+class Human {
+    String name;
+    int age;
+
+    void speak() {
+        System.out.println("Human is speaking");
+    }
+}
+
+// MobilePhone Class
+class MobilePhone {
+    String brand;
+    double price;
+
+    void call() {
+        System.out.println("Calling from mobile phone");
+    }
+}
+
+// Desktop Class
+class Desktop {
+    String model;
+    int ram;
+
+    void start() {
+        System.out.println("Desktop is starting");
+    }
+}
+
+// Main Class
+public class MainApp {
+    public static void main(String[] args) {
+
+        // Creating objects
+        Human h = new Human();
+        MobilePhone m = new MobilePhone();
+        Desktop d = new Desktop();
+
+        // Assign values
+        h.name = "Debesh";
+        h.age = 21;
+
+        m.brand = "Samsung";
+        m.price = 15000;
+
+        d.model = "Dell";
+        d.ram = 16;
+
+        // Access variables
+        System.out.println(h.name + " " + h.age);
+        System.out.println(m.brand + " " + m.price);
+        System.out.println(d.model + " " + d.ram);
+
+        // Call methods
+        h.speak();
+        m.call();
+        d.start();
+
+        // Interaction between objects
+        System.out.println(h.name + " is using " + m.brand + " phone");
+        System.out.println(h.name + " is working on " + d.model + " desktop");
+    }
+}
