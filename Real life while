@@ -1,0 +1,24 @@
+Here are 3 real-life examples where an infinite while loop is used:
+
+1. ATM Machine
+An ATM keeps running continuously to serve users.
+It only stops when the system is shut down.
+while (true) {
+    // Wait for user to insert card
+    // Process transactions
+}
+2. Game Loop (Video Games)
+Games keep running until the player exits.
+The screen keeps updating, taking input, and rendering graphics.
+while (true) {
+    // Take user input
+    // Update game state
+    // Display output
+}
+3. Server Listening for Requests
+A web server runs continuously, waiting for client requests.
+while (true) {
+    // Listen for client request
+    // Process request
+    // Send response
+}
