@@ -1,0 +1,42 @@
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a 4-digit number: ");
+        int num = sc.nextInt();
+
+        int temp = num;
+
+        int smallest = 0;
+        int largest = 0;
+
+        // build smallest (ascending)
+        for (int i = 0; i <= 9; i++) {
+            temp = num;
+            while (temp > 0) {
+                int d = temp % 10;
+                if (d == i) {
+                    smallest = smallest * 10 + d;
+                }
+                temp /= 10;
+            }
+        }
+
+        // build largest (descending)
+        for (int i = 9; i >= 0; i--) {
+            temp = num;
+            while (temp > 0) {
+                int d = temp % 10;
+                if (d == i) {
+                    largest = largest * 10 + d;
+                }
+                temp /= 10;
+            }
+        }
+
+        System.out.println("Smallest: " + smallest);
+        System.out.println("Largest: " + largest);
+    }
+}
