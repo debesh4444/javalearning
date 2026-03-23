@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int num, digit, freq = 0;
+
+        System.out.print("Enter number: ");
+        num = sc.nextInt();
+
+        System.out.print("Enter digit: ");
+        digit = sc.nextInt();
+
+        while (num != 0) {
+            int last = num % 10;   // get last digit
+
+            if (last == digit) {
+                freq = freq + 1;  // increase frequency
+            }
+
+            num = num / 10;       // remove last digit
+        }
+
+        System.out.println("Frequency = " + freq);
+    }
+}
